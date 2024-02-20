@@ -1,0 +1,656 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 90px;
+    padding: 0 20px;
+    box-shadow: 0 -5px 10px 10px #000b1f;
+    background-color: #071329;
+}
+
+
+.boxBtnMenuMobile {
+    display: none;
+}
+
+.contentLogo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    height: 100%;
+}
+
+.title {
+    margin-top: 2px;
+    font-family: "Bahianita", sans-serif !important;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px #000;
+    color: #dfe5eb;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.navItem {
+    list-style: none;
+}
+
+.navLink {
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #dfe5eb;
+    cursor: pointer;
+}
+
+.navLink:hover {
+    color: #009CF4;
+}
+
+.navLink::after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    content: " ";
+    background-color: #009CF4;
+    transition: 0.5s ease-in-out;
+}
+
+.navLink:hover::after {
+    width: 100%;
+
+}
+
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #071329;
+    box-shadow: #111112 -10px 10px 40px;
+}
+
+.titleAuth {
+    font-weight: bold;
+    color: #dfe5eb;
+    text-shadow: #000000af 0px 10px 10px;
+    text-align: center;
+
+}
+
+.errorMsg {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #8e0000;
+    text-shadow: #000000af 0px 10px 10px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: -4px 8px 4px 0px rgba(0, 3, 18, 0.4) inset, -16px -64px 250px 0px rgba(40, 40, 41, 0.616) inset;
+    background-color: #001c50;
+}
+
+.svg {
+    font-size: 18px;
+    color: #dfe5eb;
+    cursor: pointer;
+}
+
+.eye {
+    font-size: 25px;
+    color: #dfe5eb;
+    cursor: pointer;
+}
+
+.eye:hover {
+    color: #009CF4;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    color: #dfe5eb;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.linkContainer {
+    flex-direction: row;
+    display: flex;
+    width: 99%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.txtCadastrar {
+    font-size: 12px;
+    color: #dfe5eb;
+}
+
+.linkCadastrar {
+    text-decoration: none;
+    font-size: 12px;
+    color: #dfe5eb;
+
+}
+
+.linkCadastrar:hover {
+    color: #009CF4;
+}
+
+.actionBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #17233a;
+    color: #dfe5eb;
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: #000000af 0px 10px 10px;
+    cursor: pointer;
+}
+
+.actionBtn:hover {
+    background-color: #14284fbd;
+}
+
+.actionBtnRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #17233a;
+    color: #dfe5eb;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: #000000af 0px 10px 10px;
+    cursor: pointer;
+}
+
+.actionBtnRegister:hover {
+    background-color: rgba(20, 40, 79, 0.741)
+}
+
+.actionLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #dfe5eb;
+}
+
+.actionLink:hover {
+    color: #009CF4;
+}
+
+.actionLink:hover .svg {
+    color: #009CF4;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+    width: 290px;
+    height: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    color: #dfe5eb;
+    cursor: pointer;
+}
+
+.label:hover {
+    color: #009CF4;
+}
+
+.label:hover .svg {
+    color: #009CF4;
+}
+
+.establishmentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.boxList {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 30px;
+    box-shadow: -4px 8px 4px 0px rgba(0, 0, 0, 0.32) inset, -16px -64px 250px 0px rgba(40, 40, 41, 0.616) inset, -8px 8px 16px 0px rgb(20, 20, 20);
+    background-color: #00163ea0;
+}
+
+.itemList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    list-style: none;
+    box-shadow: -5px 5px 10px #000b1f;
+    background-color: #071329;
+}
+
+.boxImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    padding: 5px;
+    background: linear-gradient(90deg, #595f70 10%, #071329c9 90%);
+}
+
+.divider {
+    height: 100%;
+    border: 2px solid #595f70;
+}
+
+.boxText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+    height: 100%;
+    padding-left: 70px;
+}
+
+.textList {
+    font-size: 20px;
+    font-weight: bold;
+    color: #dfe5eb;
+}
+
+.contentBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    width: 22%;
+    height: 100%;
+    padding-right: 15px;
+}
+
+.svgDel {
+    font-size: 25px;
+    color: #8e0000;
+    cursor: pointer;
+}
+
+.svgEdit {
+    font-size: 23px;
+    color: #009CF4;
+    cursor: pointer;
+}
+
+.modalContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000b4;
+}
+
+.modalContent {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #abbac9;
+    box-shadow: #111112 -10px 10px 40px;
+}
+
+.svgClose {
+    font-size: 25px;
+    color: #111112;
+    cursor: pointer;
+}
+
+.svgClose:hover {
+    color: #bb0000;
+}
+
+.boxMsgModal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.textMsg {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111112;
+}
+
+.boxBtnModal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    width: 100%;
+}
+
+.btnConfirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 350px;
+    height: 40px;
+    background-color: #17233a;
+    color: #dfe5eb;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: #000000af 0px 10px 10px;
+    cursor: pointer;
+}
+
+.svgBtnConfirm {
+    color: #12b200;
+}
+
+.btnConfirm:hover {
+    background-color: #085000;
+}
+
+.btnCancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 350px;
+    height: 40px;
+    background-color: #17233a;
+    color: #dfe5eb;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: #000000af 0px 10px 10px;
+    cursor: pointer;
+}
+
+.svgCancel {
+    color: #a40000;
+}
+
+.btnCancel:hover {
+    background-color: #590101;
+}
+
+.itemListMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    list-style: none;
+    box-shadow: -5px 5px 10px #000b1f;
+    background-color: #071329;
+}
+
+.boxMessage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 10px;
+    box-shadow: -4px 8px 4px 0px rgba(0, 0, 0, 0.32) inset, -16px -64px 250px 0px rgba(40, 40, 41, 0.616) inset;
+    background-color: #dfe5eb;
+}
+
+.message {
+    font-size: 14px;
+    font-weight: 600;
+    color: #071329;
+}
+
+.titleMobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .headerMobile {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding: 50px 20px;
+        box-shadow: 0 -5px 10px 10px #000b1f;
+        background-color: #071329;
+    }
+
+    .boxLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .boxBtnMenuMobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        height: 0;
+    }
+
+    .btnMenuMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: auto;
+        border: none;
+        background: none;
+        z-index: 99999;
+    }
+
+    .iconOpen {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 18px;
+        left: 10px;
+        color: #d4d4d8;
+    }
+
+    .iconClose {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 10px;
+        left: 5px;
+        color: #d4d4d8;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .establishmentContainer {
+        padding: 30px 0;
+    }
+
+    .boxList {
+        width: 90%;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .imgList {
+        width: 50px;
+        height: 50px;
+    }
+
+    .itemList {
+        height: 80px;
+    }
+
+    .boxImg {
+        width: 80px;
+    }
+
+    .boxText {
+        padding-left: 10px;
+    }
+
+    .textList {
+        font-size: 14px;
+    }
+
+    .contentBtn {
+        padding-right: 5px;
+    }
+
+    .svgDel {
+        font-size: 22px;
+    }
+
+    .svgEdit { 
+        font-size: 20px;
+    }
+
+    .authContainer {
+        width: 90%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    .modalContent {
+        width: 90%;
+        max-width: 400px;
+        padding: 10px;
+    }
+    
+    .textMsg {
+        font-size: 18px;
+    }
+
+    .btnCancel {
+        font-size: 16px;
+    }
+
+    .btnConfirm {
+        font-size: 16px;
+    }
+
+
+}
